@@ -1,8 +1,9 @@
 package ohm.softa.a09.model;
 
-import javafx.scene.image.Image;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+
+import javafx.scene.image.Image;
 
 /**
  * @author Peter Kurfer
@@ -11,11 +12,11 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 public abstract class Fighter {
 
 	private final String pilot;
-	private final Image fighterImage;
+	private final ImgWrapper imgWrapper;
 
-	public Fighter(String pilot, Image fighterImage) {
+	public Fighter(String pilot,ImgWrapper imgWrapper) {
 		this.pilot = pilot;
-		this.fighterImage = fighterImage;
+		this.imgWrapper = imgWrapper;
 	}
 
 	public String getPilot() {
@@ -23,7 +24,7 @@ public abstract class Fighter {
 	}
 
 	public Image getFighterImage() {
-		return fighterImage;
+		return imgWrapper.getImage();
 	}
 
 	public abstract Force getSideOfForce();

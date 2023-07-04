@@ -3,10 +3,11 @@ package ohm.softa.a09.model.rebellion;
 import ohm.softa.a09.model.Fighter;
 import ohm.softa.a09.model.Force;
 import javafx.scene.image.Image;
+import ohm.softa.a09.model.ImgWrapper;
 
 public class YWing extends Fighter {
 
-	public YWing(String pilot, Image fighterImage) {
+	public YWing(String pilot, ImgWrapper fighterImage) {
 		super(pilot, fighterImage);
 	}
 
